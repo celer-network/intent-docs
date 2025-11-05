@@ -22,5 +22,5 @@
 ## References
 
 * [Contract Addresses](references/contract-addresses.md)
-* [Audit Reports](https://github.com/celer-network/intent-rfq-contract/tree/main/audit)
-* [Github](https://github.com/celer-network/intent-rfq-contract)
+* [Audit Reports](references/audit-reports.md)
+* [Github](references/github.md)
