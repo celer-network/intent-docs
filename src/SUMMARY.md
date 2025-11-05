@@ -1,25 +1,25 @@
 # Table of contents
 
-## Overview
+# Overview
 
 * [Introduction](README.md)
 * [Workflow](overview/workflow.md)
 * [Fee](overview/fee.md)
 
-## Market Maker
+# Market Maker
 
 * [Introduction](market-maker/introduction.md)
 * [SDK](market-maker/sdk.md)
 * [Sample Implementation](market-maker/sample-implementation.md)
 
-## Developer
+# Developer
 
 * [Open API](developer/open-api/README.md)
   * [API: rfqPrice](developer/open-api/api-rfqprice.md)
   * [API: rfqQuote](developer/open-api/api-rfqquote.md)
   * [Contract: srcDeposit](developer/open-api/contract-srcdeposit.md)
 
-## References
+# References
 
 * [Contract Addresses](references/contract-addresses.md)
 * [Audit Reports](references/audit-reports.md)

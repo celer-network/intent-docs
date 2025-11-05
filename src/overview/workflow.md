@@ -6,7 +6,7 @@ To illustrate the cross-chain trade process, let’s walk through a common use c
 
 The diagram below outlines the typical RFQ execution process in Celer Intent, where both the user and the selected market maker act cooperatively. Note: The RFQ server operates as a centralized coordinator for communication and quote aggregation.
 
-<figure><img src="../.gitbook/assets/1 (1).png" alt=""><figcaption><p>Core Flow</p></figcaption></figure>
+<img src="../.gitbook/assets/1 (1).png" alt=""><figcaption><p>Core Flow</p></figcaption>
 
 **Step 1**
 
@@ -63,4 +63,4 @@ To safeguard users in such cases, a monitoring component known as the **RFQ Sent
 
 Upon receiving this message, the user is able to execute a transaction on the source chain to reclaim their originally locked tokens—ensuring that funds remain secure even when counterparties fail to cooperate.
 
-<figure><img src="../.gitbook/assets/2 (1) (1).png" alt=""><figcaption><p>Refund Flow</p></figcaption></figure>
+<img src="../.gitbook/assets/2 (1) (1).png" alt=""><figcaption><p>Refund Flow</p></figcaption>

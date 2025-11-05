@@ -1,8 +1,3 @@
----
-description: >-
-  Quote the Celer Intent system to get the call data for Celer Intent
-  transaction submitting
----
 
 # API: rfqQuote
 
@@ -22,8 +17,8 @@ description: >-
 | srcNative<mark style="color:red;">\*</mark>   | Bool   | true when source token is a native token                  |
 | dstNative<mark style="color:red;">\*</mark>   | Bool   | true when destination receive token is a native token     |
 
-{% tabs %}
-{% tab title="200: OK " %}
+
+
 ```json
 // Response example
 {
@@ -60,8 +55,8 @@ description: >-
     }
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+
 
 ## Request Parameters
 

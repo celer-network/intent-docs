@@ -1,8 +1,3 @@
----
-description: >-
-  The Ominichain Liquidity Protocol with High Liquidity Efficiency, MEV
-  Protection, and Zero Slippage
----
 
 # Introduction
 

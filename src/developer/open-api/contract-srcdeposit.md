@@ -1,6 +1,3 @@
----
-description: Celer Intent contract interaction reference
----
 
 # Contract: srcDeposit
 
@@ -11,7 +8,7 @@ description: Celer Intent contract interaction reference
 
 ABI (optional if you use the binding like Typechain)
 
-{% file src="../../.gitbook/assets/rfq.json" %}
+
 
 ### srcDeposit/srcDepositNative
 
@@ -52,7 +49,5 @@ Lock the assets to source rfq contract. if the bridge token is a native token, u
 | receiver          | String         | receive address                                                               |
 | refundTo          | String         | refund address, Usually the user wallet address.                              |
 | liquidityProvider | String         | market maker address, get form [rfqQuote](api-rfqquote.md#quote) mmAddr filed |
-
-
 
 Once the transaction submitting, same as other EVM bridge,  user history can be found in [TransferHistory](broken-reference) API, and the transaction process status can be found in [GetTransferStatus](broken-reference) API.

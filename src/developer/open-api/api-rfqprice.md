@@ -1,6 +1,3 @@
----
-description: Get Celer Intent system order fee and amount out
----
 
 # API: rfqPrice
 
@@ -15,8 +12,8 @@ description: Get Celer Intent system order fee and amount out
 | srcAmount<mark style="color:red;">\*</mark> | String | input amount with source token decimal                |
 | dstNative<mark style="color:red;">\*</mark> | Bool   | true when destination receive token is a native token |
 
-{% tabs %}
-{% tab title="200: OK " %}
+
+
 ```javascript
 // quote reponse example
 {
@@ -52,8 +49,8 @@ description: Get Celer Intent system order fee and amount out
     "txMsgFee": "132000000000000"
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+
 
 ## Request Parameters
 
