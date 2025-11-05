@@ -15,7 +15,7 @@ The user submits an RFQ to the RFQ server, specifying the following details:
 * Source and destination chains
 * Source and destination tokens
 * Amount to be swapped
-* Two key time constraints:
+* Two key time constraints
 
 **Source Submission Deadline**: The user must confirm the quote and lock their tokens on the source chain before this deadline. If missed, the quote expires and the transaction will revert on-chain.
 
