@@ -36,10 +36,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-25c8e94d.js";
+            window.path_to_searchindex_js = "../searchindex-243ac26a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-2df05b6b.js"></script>
+        <script src="../toc-3634da58.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -179,16 +179,16 @@
 <p>To illustrate the cross-chain trade process, let’s walk through a common use case: a user wants to swap <strong>Token X on Chain A</strong> for <strong>Token Y on Chain B</strong>. This transaction is handled as a <strong>Request for Quote (RFQ)</strong> order.</p>
 <h2 id="core-flow-cooperative-case"><a class="header" href="#core-flow-cooperative-case">Core Flow (cooperative case)</a></h2>
 <p>The diagram below outlines the typical RFQ execution process in Celer Intent, where both the user and the selected market maker act cooperatively. Note: The RFQ server operates as a centralized coordinator for communication and quote aggregation.</p>
-<figure><img src="../.gitbook/assets/1 (1).png" alt=""><figcaption>
+<p><img src="../.gitbook/assets/1 (1).png" alt=""><figcaption>
 <p>Core Flow</p>
-</figcaption></figure>
+</figcaption></p>
 <p><strong>Step 1</strong></p>
 <p>The user submits an RFQ to the RFQ server, specifying the following details:</p>
 <ul>
 <li>Source and destination chains</li>
 <li>Source and destination tokens</li>
 <li>Amount to be swapped</li>
-<li>Two key time constraints:</li>
+<li>Two key time constraints</li>
 </ul>
 <p><strong>Source Submission Deadline</strong>: The user must confirm the quote and lock their tokens on the source chain before this deadline. If missed, the quote expires and the transaction will revert on-chain.</p>
 <p><strong>Destination Fund Release Deadline</strong>: The market maker must complete the transfer to the user on the destination chain before this deadline. Failure to do so makes the order eligible for refund.</p>
@@ -213,9 +213,9 @@
 <p>If the market maker does not complete the transfer of destination tokens to the user before the designated <strong>destination release deadline</strong>, the RFQ order transitions into a refundable state on the destination chain.</p>
 <p>To safeguard users in such cases, a monitoring component known as the <strong>RFQ Sentinel</strong> implemented using Brevis ZK Coprocessor continuously scans for expired or incomplete orders. When it detects an unfulfilled RFQ past the deadline, the sentinel generate a ZK proof of incomplete transaction and send a <strong>Cross-Chain Message #3</strong>, which is sent back to the source chain.</p>
 <p>Upon receiving this message, the user is able to execute a transaction on the source chain to reclaim their originally locked tokens—ensuring that funds remain secure even when counterparties fail to cooperate.</p>
-<figure><img src="../.gitbook/assets/2 (1) (1).png" alt=""><figcaption>
+<p><img src="../.gitbook/assets/2 (1) (1).png" alt=""><figcaption>
 <p>Refund Flow</p>
-</figcaption></figure>
+</figcaption></p>
 
                     </main>
 

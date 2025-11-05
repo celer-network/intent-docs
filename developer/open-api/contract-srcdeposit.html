@@ -36,10 +36,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../../searchindex-25c8e94d.js";
+            window.path_to_searchindex_js = "../../searchindex-243ac26a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-2df05b6b.js"></script>
+        <script src="../../toc-3634da58.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -175,16 +175,13 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <hr>
-<h2 id="description-celer-intent-contract-interaction-reference"><a class="header" href="#description-celer-intent-contract-interaction-reference">description: Celer Intent contract interaction reference</a></h2>
-<h1 id="contract-srcdeposit"><a class="header" href="#contract-srcdeposit">Contract: srcDeposit</a></h1>
+                        <h1 id="contract-srcdeposit"><a class="header" href="#contract-srcdeposit">Contract: srcDeposit</a></h1>
 <h3 id="requirements"><a class="header" href="#requirements">Requirements</a></h3>
 <ol>
 <li>Get the quote result from <a href="broken-reference">rfqQuote</a> API </li>
 <li>Find the corresponding contract address here</li>
 </ol>
 <p>ABI (optional if you use the binding like Typechain)</p>
-<p>{% file src=“../../.gitbook/assets/rfq.json” %}</p>
 <h3 id="srcdepositsrcdepositnative"><a class="header" href="#srcdepositsrcdepositnative">srcDeposit/srcDepositNative</a></h3>
 <p>Lock the assets to source rfq contract. if the bridge token is a native token, use the srcDepositNative.</p>
 <pre><code>// typechain method example
